@@ -1,0 +1,18 @@
+﻿{
+	"value" : [
+		{
+		  "id": 1,
+		  "name": "Page 1",
+		  "text": "P.L.I.N.K.O.-  is a game that has become popular due to its simple yet addictive gameplay. It first appeared on the American television show \"The Price Is Right\", where participants could win various prizes using their luck. The game consists of a vertical board with many spikes, down which players throw a disc, watching it fall until it stops in one of the secret places at the bottom, where various amounts of money or prizes are listed. "
+		},
+		{
+		  "id": 2,
+		  "name": "Page 2",
+		  "text": "The first step is to set up the playing area. The top of the board is covered with staggered spikes, which cause the disc to swing and change direction as it passes them. Below are the cells, each with its own reward, and the player must aim to hit the ones that offer the highest value prizes.
+
+When the player is ready, he receives a disc or puck and must drop it from the top of the board. When throwing the disc, the player hopes that it will bounce off the spikes in his favor. This is the moment when luck plays a decisive role, since the trajectory of the disc is impossible to predict.
+
+As soon as the disc flies past all the spikes and lands in one of the cells, the game is over and the player receives the corresponding prize that was indicated in that cell."
+		}
+	]
+}
