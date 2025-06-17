@@ -1,23 +1,23 @@
 # ninja log v5
-20	2593	7717860320522405	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a60b531854161ce2
-157	866	7717860303062461	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a8080f40459cbb75
-866	1370	7717860307779318	C:/Unity Project/WhoIsPlinko/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2a1i1m3g/obj/arm64-v8a/libswappywrapper.so	48401ae4a8d6a028
-7	2134	7717860315808544	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a91310d847feac60
-131	2137	7717860315712712	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9c59887d77b6b780
-140	2192	7717860316414165	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	71e9da57716a5b6c
-37	2251	7717860317117118	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b3df513ede56bed
-27	2189	7717860316383834	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2e4e920940eeb889
-149	2340	7717860318019115	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4662a04f8f51e644
-68	2500	7717860319628729	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b6e39fa8e7fe2600
-2593	2678	7717860321461329	C:/Unity Project/WhoIsPlinko/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2a1i1m3g/obj/arm64-v8a/libgame.so	a345ecf106f8cd49
+6	2355	7717861235224904	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a60b531854161ce2
 75	354	7717861215114257	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a8080f40459cbb75
 355	780	7717861218832971	C:/Unity Project/WhoIsPlinko/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2a1i1m3g/obj/arm64-v8a/libswappywrapper.so	48401ae4a8d6a028
-35	1877	7717861230376261	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9c59887d77b6b780
 27	1930	7717861230912268	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a91310d847feac60
-12	1964	7717861231209278	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2e4e920940eeb889
-53	1967	7717861231209278	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	71e9da57716a5b6c
+35	1877	7717861230376261	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9c59887d77b6b780
 19	2014	7717861231768604	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b3df513ede56bed
+53	1967	7717861231209278	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	71e9da57716a5b6c
 65	2104	7717861232719604	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4662a04f8f51e644
+12	1964	7717861231209278	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2e4e920940eeb889
 44	2253	7717861234219771	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b6e39fa8e7fe2600
-6	2355	7717861235224904	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a60b531854161ce2
 2355	2463	7717861236356062	C:/Unity Project/WhoIsPlinko/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2a1i1m3g/obj/arm64-v8a/libgame.so	a345ecf106f8cd49
+211	1135	7718708968910563	FramePacing/CMakeFiles/swappywrapper.dir/UnitySwappyWrapper.cpp.o	a8080f40459cbb75
+1136	1589	7718708973454467	C:/Unity Project/WhoIsPlinko/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2a1i1m3g/obj/arm64-v8a/libswappywrapper.so	48401ae4a8d6a028
+198	2820	7718708985770292	GameActivity/CMakeFiles/game.dir/UGAInputKeyEvent.cpp.o	9c59887d77b6b780
+35	2854	7718708985939848	GameActivity/CMakeFiles/game.dir/UGAEntry.cpp.o	a91310d847feac60
+58	2884	7718708986453587	GameActivity/CMakeFiles/game.dir/UGAConfiguration.cpp.o	2e4e920940eeb889
+191	2899	7718708986605460	GameActivity/CMakeFiles/game.dir/UGAInputMotionEvent.cpp.o	71e9da57716a5b6c
+19	2991	7718708987533891	GameActivity/CMakeFiles/game.dir/UGADebug.cpp.o	b3df513ede56bed
+184	3271	7718708990390345	GameActivity/CMakeFiles/game.dir/UGAInput.cpp.o	b6e39fa8e7fe2600
+7	3370	7718708991379097	GameActivity/CMakeFiles/game.dir/UGAApplication.cpp.o	a60b531854161ce2
+204	3457	7718708992304314	GameActivity/CMakeFiles/game.dir/UGASoftKeyboard.cpp.o	4662a04f8f51e644
+3458	3561	7718708993379506	C:/Unity Project/WhoIsPlinko/Library/Bee/Android/Prj/IL2CPP/Gradle/unityLibrary/build/intermediates/cxx/RelWithDebInfo/2a1i1m3g/obj/arm64-v8a/libgame.so	a345ecf106f8cd49
