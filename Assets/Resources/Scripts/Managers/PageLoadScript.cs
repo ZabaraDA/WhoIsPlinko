@@ -5,7 +5,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelLoadScript : MonoBehaviour
+public class PageLoadManager : MonoBehaviour
 {
     [SerializeField]
     private int _currentPageId;

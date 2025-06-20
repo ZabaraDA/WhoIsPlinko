@@ -1,0 +1,67 @@
+﻿{
+  "value": [
+    {
+      "id": 1,
+      "questionText": "In which TV series did this game first appear?",
+      "answers": [
+        {
+          "id": 1,
+          "answerText": "The Prince is right",
+          "isCorrectAnswer": false
+        },
+        {
+          "id": 2,
+          "answerText": "Super Right",
+          "isCorrectAnswer": false
+        },
+        {
+          "id": 3,
+          "answerText": "The price is right",
+          "isCorrectAnswer": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "questionText": "How does the game end?",
+      "answers": [
+        {
+          "id": 1,
+          "answerText": "throwing several balls before hitting",
+          "isCorrectAnswer": false
+        },
+        {
+          "id": 2,
+          "answerText": "hitting the winning slot",
+          "isCorrectAnswer": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "questionText": "Super question. In what year was the game first shown?",
+      "answers": [
+        {
+          "id": 1,
+          "answerText": "1856",
+          "isCorrectAnswer": false
+        },
+        {
+          "id": 2,
+          "answerText": "1990",
+          "isCorrectAnswer": false
+        },
+        {
+          "id": 3,
+          "answerText": "1983",
+          "isCorrectAnswer": true
+        },
+        {
+          "id": 4,
+          "answerText": "1993",
+          "isCorrectAnswer": false
+        }
+      ]
+    }
+  ]
+}

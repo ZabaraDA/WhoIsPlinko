@@ -6,7 +6,7 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/Menu Scene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
     path: Assets/Scenes/Directory Scene.unity
@@ -14,6 +14,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Gallery Scene.unity
     guid: 87bb28c2b3b90be43a0fa254dd1c24ec
+  - enabled: 1
+    path: Assets/Scenes/Quiz Scene.unity
+    guid: 49a02099630ce1a469583b004c087900
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 61fd9721bd0957f4599894f1cb73e125, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 310410ea6832be941966e63b9077d34f, type: 2}
