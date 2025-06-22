@@ -9,5 +9,5 @@ public class Question
     [JsonProperty("questionText")]
     public string Text { get; set; }
     [JsonProperty("answers")]
-    public List<Answer> AnswerList { get; set; }
+    public List<Answer> Answers { get; set; }
 }

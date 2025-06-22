@@ -1,6 +1,9 @@
 using UnityEngine;
 
-public interface IQuizPresenter
+public interface IQuizPresenter : IInitializable, IDisposable
 {
-    
+    void LoadNextQuestion();
+    void LoadBackQuestion();
+    //bool TryGetNextQuestion();
+    //bool TryGetBackQuestion();
 }

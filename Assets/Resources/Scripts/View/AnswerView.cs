@@ -14,30 +14,31 @@ public class AnswerView : MonoBehaviour, IAnswerView
     [SerializeField]
     private TMP_Text _text;
 
-    public int Id { get; set; }
-    public string Text { get; set; }
-    public bool IsCorrect { get; set; }
-
-    public event Action<int> OnAnswerClicked;
+    public event Action OnViewIsSelectedChanged;
 
     private void Start()
     {
-        //_button = GetComponent<Button>();
         //_image =  GetComponentInChildren<Image>().gameObject.GetComponentInChildren<Image>();
         //_text = GetComponent<TMP_Text>();
-
-        _button.onClick.AddListener(OnQuestionClick);
+        //_button = GetComponent<Button>();
+        _button.onClick.AddListener(OnAnswerClick);
+        Debug.Log("AnswerView Start");
     }
 
     public void SetColor(Color color)
     {
+        Debug.Log("AnswerView SetColor: " + color.ToString());
         _image.color = color;
     }
 
-    public void OnQuestionClick()
+    public void OnAnswerClick()
     {
-        OnAnswerClicked?.Invoke(Id);
-        //_image.color = new Color(255 / 255f, 62 / 255f, 0 / 255f, 255 / 255f); //rgba(204, 57, 24, 1)
+        OnViewIsSelectedChanged?.Invoke();
+        Debug.Log("AnswerView OnAnswerClick");
     }
 
+    public void SetText(string text)
+    {
+        _text.text = text;
+    }
 }
