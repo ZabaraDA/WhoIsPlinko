@@ -10,6 +10,8 @@ public interface IQuizModel
 
     ICollection<IQuestionModel> QuestionList { get; set; }
 
+    int GetCorrectQuestionCount();
+    int GetQuestionCount();
     void LoadQuestion(IQuestionModel questionModel);
     bool TryGetNextQuestion(out IQuestionModel questionModel);
     bool TryGetBackQuestion(out IQuestionModel questionModel);

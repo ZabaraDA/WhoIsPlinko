@@ -3,7 +3,9 @@ using UnityEngine;
 
 public interface IQuizView
 {
-    void SetText(string text);
+    void SetCorrectResultText(string text);
+    void SetQuestionNumberText(string text);
+    void SetFullResultsText(string text);
     void SetVisibilityResults(bool isVisible);
     IQuestionView GetQuestionView();
 

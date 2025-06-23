@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-
-
 public class QuizManager : MonoBehaviour
 {
     [SerializeField]
@@ -50,26 +48,6 @@ public class QuizManager : MonoBehaviour
         _quizPresenter.Dispose();
     }
 
-
-    //public void LoadNextQuestion()
-    //{
-    //    if (_quizPresenter.TryGetNextQuestion())
-    //    {
-    //        _quizPresenter.LoadNextQuestion();
-    //    }
-    //}
-    //public void LoadBackQuestion()
-    //{
-    //    if (_quizPresenter.TryGetBackQuestion())
-    //    {
-    //        _quizPresenter.LoadBackQuestion();
-    //    }
-    //    else
-    //    {
-            
-    //    }
-    //}
-
     private List<Question> GetQuizData()
     {
         TextAsset text = Resources.Load<TextAsset>("Json/QuizJson");
@@ -78,6 +56,4 @@ public class QuizManager : MonoBehaviour
 
         return quizContainer.Value;
     }
-    
-
 }

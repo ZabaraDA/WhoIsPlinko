@@ -6,15 +6,23 @@ using UnityEngine.UI;
 public class QuizView : MonoBehaviour, IQuizView
 {
     [SerializeField]
-    private TMP_Text _quizCounterText;
-    [SerializeField]
     private GameObject _questionContainer;
     [SerializeField]
+    private GameObject _resultsContainer;
+
+    [SerializeField]
+    private TMP_Text _questionNumberText;
+    [SerializeField]
+    private TMP_Text _quizCounterText;
+    [SerializeField]
     private TMP_Text _resultsText;
+
     [SerializeField]
     private Button _nextButton;
     [SerializeField]
     private Button _backButton;
+    [SerializeField]
+    private Button _menuButton;
 
     public event Action OnNextButtonClicked;
     public event Action OnBackButtonClicked;
@@ -43,7 +51,7 @@ public class QuizView : MonoBehaviour, IQuizView
         return _questionContainer.GetComponent<QuestionView>();
     }
 
-    public void SetText(string text)
+    public void SetCorrectResultText(string text)
     {
         _quizCounterText.text = text;
     }
@@ -60,6 +68,20 @@ public class QuizView : MonoBehaviour, IQuizView
 
     public void SetVisibilityResults(bool isVisible)
     {
-        _resultsText.SetActive(isVisible);
+        _questionContainer.SetActive(!isVisible);
+        _nextButton.gameObject.SetActive(!isVisible);
+        _backButton.gameObject.SetActive(!isVisible);
+        _menuButton.gameObject.SetActive(isVisible);
+        _resultsContainer.SetActive(isVisible);
+    }
+
+    public void SetQuestionNumberText(string text)
+    {
+        _questionNumberText.text = text;
+    }
+
+    public void SetFullResultsText(string text)
+    {
+        _resultsText.text = text;
     }
 }

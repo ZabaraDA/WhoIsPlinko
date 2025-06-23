@@ -14,6 +14,8 @@ public class QuizPresenter : IQuizPresenter
 
     public void Dispose()
     {
+        _quizView.OnNextButtonClicked -= LoadNextQuestion;
+        _quizView.OnBackButtonClicked -= LoadBackQuestion;
         _quizModel.OnModelCurrentQuestionChanged -= OnModelCurrentQuestionChanged;
         _questionPresenter.Dispose();
     }
@@ -31,7 +33,7 @@ public class QuizPresenter : IQuizPresenter
 
         if (_quizModel.TryGetBackQuestion(out IQuestionModel questionModel))
         {
-            _quizModel.LoadQuestion(questionModel);
+            LoadQuestion(questionModel);
         }
         else
         {
@@ -44,23 +46,30 @@ public class QuizPresenter : IQuizPresenter
 
         if (_quizModel.TryGetNextQuestion(out IQuestionModel questionModel))
         {
-            _quizModel.LoadQuestion(questionModel);
+            LoadQuestion(questionModel);
         }
         else
         {
-
+            LoadResults();
         }
     }
+    private void LoadQuestion(IQuestionModel questionModel)
+    {
+        _quizModel.LoadQuestion(questionModel);
+        _quizView.SetQuestionNumberText($"Quiz ({questionModel.Id}/{_quizModel.QuestionList.Count})");
+    }
 
-    //public bool TryGetBackQuestion()
-    //{
-    //    return _quizModel.TryGetBackQuestion(out IQuestionModel questionModel);
-    //}
-
-    //public bool TryGetNextQuestion()
-    //{
-    //    return _quizModel.TryGetNextQuestion(out IQuestionModel questionModel);
-    //}
+    private void LoadResults()
+    {
+        _quizView.SetVisibilityResults(true);
+        _quizView.SetQuestionNumberText($"Results");
+        int correctQuestionCount = _quizModel.GetCorrectQuestionCount();
+        int questionCount = _quizModel.GetQuestionCount();
+        _quizView.SetCorrectResultText($"{correctQuestionCount}/{questionCount}");
+        string fullResultsText = $"You know the theory at {correctQuestionCount} out of {questionCount}" 
+            + (correctQuestionCount == questionCount ? "!" :", you should read it again and you will definitely pass this test with the maximum score!");
+        _quizView.SetFullResultsText(fullResultsText);
+    }
 
     private void OnModelCurrentQuestionChanged(IQuestionModel questionModel)
     {
@@ -68,7 +77,7 @@ public class QuizPresenter : IQuizPresenter
         {
             _questionPresenter.Dispose();
         }
-        _quizView.SetText(questionModel.Id + "/" + _quizModel.QuestionList.Count);
+        _quizView.SetCorrectResultText(questionModel.Id + "/" + _quizModel.QuestionList.Count);
         IQuestionView questionView = _quizView.GetQuestionView();
         IQuestionPresenter questionPresenter = new QuestionPresenter(questionView, questionModel);
 

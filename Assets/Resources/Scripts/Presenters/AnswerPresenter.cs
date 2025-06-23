@@ -24,7 +24,7 @@ public class AnswerPresenter : IAnswerPresenter
     {
         _answerModel.OnModelIsSelectedChanged += OnModelIsSelectedChanged;
         _answerView.OnViewIsSelectedChanged += OnViewIsSelectedChanged;
-        OnModelIsSelectedChanged(false);
+        OnModelIsSelectedChanged(_answerModel.IsSelected);
         _answerView.SetText(_answerModel.Text);
     }
 
@@ -44,10 +44,5 @@ public class AnswerPresenter : IAnswerPresenter
         {
             _answerView.SetColor(Color.white);
         }
-    }
-
-    public void SelectAnswer()
-    {
-       
     }
 }

@@ -29,6 +29,15 @@ public class QuizModel : IQuizModel
         QuestionList = questionList;
     }
 
+    public int GetQuestionCount()
+    {
+        return QuestionList.Count();
+    }
+    public int GetCorrectQuestionCount()
+    {
+        return QuestionList.Where(x => x.SelectedAnswer.IsCorrect).Count();
+    }
+
     public void LoadQuestion(IQuestionModel questionModel)
     {
         CurrentQuestion = questionModel;
@@ -49,4 +58,5 @@ public class QuizModel : IQuizModel
         questionModel = TryGetQuestion(CurrentQuestion.Id - 1);
         return questionModel != null;
     }
+
 }
